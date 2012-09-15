@@ -236,7 +236,7 @@ var Meny = {
 						break;
 				}
 
-				style.position = 'fixed';
+				style.position = 'absoulte';
 				style.display = 'block';
 				style.zIndex = 1;
 
