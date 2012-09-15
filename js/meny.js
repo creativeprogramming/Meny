@@ -9,11 +9,17 @@
  *
  *  
  * Ps. to emulate fixed positioning do following after menu creation:
- 
- jQuery(window).on("scroll",function(e){
+jQuery(window).on("scroll",function(e){
+    var menyH=jQuery(".creativeprogramming *").height();
+     var contentH=jQuery("#page-bg").height();
+      jQuery(".creativeprogramming").height(contentH); //fix height
+     console.debug(menyH+jQuery(window).scrollTop());
+     if ((menyH+jQuery(window).scrollTop())<contentH){
+        
        jQuery(".creativeprogramming").css("top",jQuery(window).scrollTop()+"px");
+     }
 });
- * where ".creativeprogramming" is the selector for the meny element!
+ * where ".creativeprogramming" is the selector for the meny element and #page-bg the selector of the content element 
  *
  *
  */
