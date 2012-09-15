@@ -8,13 +8,13 @@ CHANGES IN creativeprogramming's version:
  - to emulate fixed positioning in complex layout add the following after meny creation:
 ```javascript
 jQuery(window).on("scroll",function(e){
-    var menyH=jQuery(".creativeprogramming *").height();
-     var contentH=jQuery("#page-bg").height();
-      jQuery(".creativeprogramming").height(contentH); //fix height
+    var menyH=jQuery(".meny *").height();
+     var contentH=jQuery("#content").height();
+      jQuery(".meny").height(contentH); //fix height
      console.debug(menyH+jQuery(window).scrollTop());
      if ((menyH+jQuery(window).scrollTop())<contentH){
         
-       jQuery(".creativeprogramming").css("top",jQuery(window).scrollTop()+"px");
+       jQuery(".meny").css("top",jQuery(window).scrollTop()+"px");
      }
 });
 ```
