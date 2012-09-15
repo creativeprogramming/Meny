@@ -6,7 +6,8 @@ CHANGES IN creativeprogramming's version:
 
 - No fixed positioning of the menu but emulating fixed (to solve problems with scrolling and fixed pos not working as expeted in complex layouts of existing sites e.g Joomla site + Meny)
  - to emulate fixed positioning in complex layout add the following after meny creation:
-```html
+
+```javascript
 jQuery(window).on("scroll",function(e){
     var menyH=jQuery(".meny *").height();
      var contentH=jQuery("#content").height();
