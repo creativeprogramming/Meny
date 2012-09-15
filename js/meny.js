@@ -248,7 +248,7 @@ var Meny = {
 						break;
 				}
 
-				style.position = 'absoulte';
+				style.position = 'absolute';
 				style.display = 'block';
 				style.zIndex = 1;
 
