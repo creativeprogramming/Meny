@@ -4,6 +4,18 @@
  * MIT licensed
  *
  * Created by Hakim El Hattab (http://hakim.se, @hakimel)
+ *
+ * little adjustments by creativeprogramming.it
+ *
+ *  
+ * Ps. to emulate fixed positioning do following after menu creation:
+ 
+ jQuery(window).on("scroll",function(e){
+       jQuery(".creativeprogramming").css("top",jQuery(window).scrollTop()+"px");
+});
+ * where ".creativeprogramming" is the selector for the meny element!
+ *
+ *
  */
 var Meny = {
 	// Creates a new instance of Meny
