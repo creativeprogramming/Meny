@@ -1,3 +1,13 @@
+# Meny with mods by creativeprogramming
+
+The original version is:  https://github.com/hakimel/Meny
+
+CHANGES IN creativeprogramming's version:
+
+- No fixed positioning of the menu but emulating fixed (to solve problems with scrolling and fixed pos not working as expeted in complex layouts of existing sites e.g Joomla site + Meny)
+
+
+
 # Meny
 
 A three dimensional and space effecient menu. Meny works best in browsers with support for CSS 3D transforms, although it falls back on 2D animation for older browsers. Supports touch events for mobile devices.
