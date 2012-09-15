@@ -5,8 +5,19 @@ The original version is:  https://github.com/hakimel/Meny
 CHANGES IN creativeprogramming's version:
 
 - No fixed positioning of the menu but emulating fixed (to solve problems with scrolling and fixed pos not working as expeted in complex layouts of existing sites e.g Joomla site + Meny)
-
-
+ - to emulate fixed positioning in complex layout add the following after meny creation:
+```javascript
+jQuery(window).on("scroll",function(e){
+    var menyH=jQuery(".creativeprogramming *").height();
+     var contentH=jQuery("#page-bg").height();
+      jQuery(".creativeprogramming").height(contentH); //fix height
+     console.debug(menyH+jQuery(window).scrollTop());
+     if ((menyH+jQuery(window).scrollTop())<contentH){
+        
+       jQuery(".creativeprogramming").css("top",jQuery(window).scrollTop()+"px");
+     }
+});
+```
 
 # Meny
 
