@@ -10,11 +10,10 @@ CHANGES IN creativeprogramming's version:
 jQuery(window).on("scroll",function(e){
     var menyH=jQuery(".meny *").height();
      var contentH=jQuery("#content").height();
-      jQuery(".meny").height(contentH); //fix height
+      jQuery(".meny").height(window.innerHeight); //fix height
      console.debug(menyH+jQuery(window).scrollTop());
      if ((menyH+jQuery(window).scrollTop())<contentH){
-        
-       jQuery(".meny").css("top",jQuery(window).scrollTop()+"px");
+       jQuery("#content").css("top",jQuery(window).scrollTop()+"px");
      }
 });
 ```
